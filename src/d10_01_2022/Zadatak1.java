@@ -1,4 +1,4 @@
-package d10_12_2022;
+package d10_01_2022;
 
 public class Zadatak1 {
 
