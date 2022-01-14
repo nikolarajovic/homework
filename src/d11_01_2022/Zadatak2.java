@@ -9,13 +9,13 @@ public class Zadatak2 {
 		
 		sac1.brand = "LG";
 		sac1.temp = 30;
-		sac1.mode = "Summer";
+		sac1.mode = true;
 		sac1.consumptionSummerMode = 3;
 		sac1.consumptionWinterMode = 1;
 		
 		sac2.brand = "Panasonic";
 		sac2.temp = 18;
-		sac2.mode = "Winter";
+		sac2.mode = false;
 		sac2.consumptionSummerMode = 2;
 		sac2.consumptionWinterMode = 1;
 		
