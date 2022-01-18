@@ -32,7 +32,7 @@ public class Racun {
 		return stanje;
 	}
 
-	public void transakcija(double iznos) {
+	public void bilansStanja(double iznos) {
 		if (this.stanje > iznos) {
 			this.stanje += iznos;
 		}
