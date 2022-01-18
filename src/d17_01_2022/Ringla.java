@@ -8,16 +8,12 @@ public class Ringla {
 
 	public Ringla(String tip, double jacinaGrejaca) {
 		this.tip = tip;
-		this.jacina = 0;
 		this.jacinaGrejaca = jacinaGrejaca;
+		this.jacina = 0;
 	}
 
 	public int getJacina() {
 		return jacina;
-	}
-
-	public void setJacina(int jacina) {
-		this.jacina = jacina;
 	}
 
 	private int maxJacina() {
