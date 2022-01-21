@@ -1,24 +1,72 @@
 package d20_01_2022;
 
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public class Zadatak1 {
 
 	public static void main(String[] args) {
 
-		Igrac igrac1 = new Igrac("Marko Simonovic", "2124999201049", 1992, 25, "Krilo", true);
-		Igrac igrac2 = new Igrac("Jovan Jokic", "2491923424959", 1999, 10, "Srednji bek", false);
+		Scanner s = new Scanner(System.in);
 
-		igrac1.print();
-		System.out.println();
-		igrac2.print();
+		ArrayList<Igrac> igraci = new ArrayList<Igrac>();
+		ArrayList<Trener> treneri = new ArrayList<Trener>();
 
-		System.out.println();
-		
-		Trener trener1 = new Trener("Jovica Markovic", "294929191489", 1979, 10, "Kondicioni");
-		Trener trener2 = new Trener("Dusan Rukic", "2021049490", 1989, 3, "Personalni");
+		System.out.print("Unesite broj igraca: ");
+		int n = s.nextInt();
+		s.nextLine();
 
-		trener1.print();
-		System.out.println();
-		trener2.print();
+		for (int i = 0; i < n; i++) {
+
+			System.out.println("Ime igraca: ");
+			String fullName = s.nextLine();
+			System.out.println("JMBG: ");
+			String jmbg = s.nextLine();
+			System.out.println("Godiste: ");
+			int godina = s.nextInt();
+			System.out.println("Broj dresa: ");
+			int broj = s.nextInt();
+			s.nextLine();
+			System.out.println("Pozicija: ");
+			String pozicija = s.nextLine();
+			System.out.println("Kapiten: ");
+			boolean kapiten = s.nextBoolean();
+
+			igraci.add(new Igrac(fullName, jmbg, godina, broj, pozicija, kapiten));
+		}
+
+		System.out.print("Unesite broj trenera: ");
+		int y = s.nextInt();
+		s.nextLine();
+
+		for (int i = 0; i < y; i++) {
+
+			System.out.println("Ime trenera: ");
+			String fullName = s.nextLine();
+			System.out.println("JMBG: ");
+			String jmbg = s.next();
+			System.out.println("Godiste: ");
+			int godina = s.nextInt();
+			System.out.println("Godine iskustva: ");
+			int iskustvo = s.nextInt();
+			s.nextLine();
+			System.out.println("Tip trenera: ");
+			String tip = s.nextLine();
+
+			treneri.add(new Trener(fullName, jmbg, godina, iskustvo, tip));
+		}
+
+		for (int i = 0; i < igraci.size(); i++) {
+			System.out.println();
+			igraci.get(i).print();
+			System.out.println("--------");
+		}
+
+		for (int i = 0; i < treneri.size(); i++) {
+			System.out.println();
+			treneri.get(i).print();
+			System.out.println("--------");
+		}
 	}
 
 }
