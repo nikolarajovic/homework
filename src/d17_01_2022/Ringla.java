@@ -35,7 +35,7 @@ public class Ringla {
 	}
 
 	public double potrosnja(double vreme) {
-		return 100 * this.maxJacina() * this.jacina * this.jacinaGrejaca * vreme;
+		return 100 / this.maxJacina() * this.jacina * this.jacinaGrejaca * vreme;
 	}
 
 	public void print() {
@@ -45,6 +45,7 @@ public class Ringla {
 			System.out.println("Ringla je isljucena.");
 		}
 		System.out.println("Tip ringle: " + this.tip);
+		System.out.println("Jacina: " + this.jacina);
 		System.out.println("Grejac: " + this.jacinaGrejaca);
 	}
 

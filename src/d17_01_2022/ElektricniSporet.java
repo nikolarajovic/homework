@@ -1,4 +1,4 @@
-package d17_01_2022;
+	package d17_01_2022;
 
 public class ElektricniSporet {
 
@@ -82,9 +82,10 @@ public class ElektricniSporet {
 			case 4:
 				this.doleDesno.pojacajRinglu();
 				break;
-			default:
-				break;
-			} // jos uvek pokusavam da izmozgam ovaj deo
+			}
+		} else {
+			this.iskljuci(5);
+			this.pojacaj(pozicija);
 		}
 
 	}
@@ -104,26 +105,36 @@ public class ElektricniSporet {
 			this.doleDesno.isljuciRinglu();
 			break;
 		default:
+			this.goreLevo.isljuciRinglu();
+			this.goreDesno.isljuciRinglu();
+			this.doleLevo.isljuciRinglu();
+			this.doleDesno.isljuciRinglu();
 			break;
 		}
 	}
 
 	public double potrosnja(double vreme) {
-		return this.goreLevo.potrosnja(vreme) + this.goreDesno.potrosnja(vreme) + this.doleLevo.potrosnja(vreme)
-				+ this.doleDesno.potrosnja(vreme);
+		return this.goreLevo.potrosnja(vreme) + this.goreDesno.potrosnja(vreme) + 
+				this.doleLevo.potrosnja(vreme) + this.doleDesno.potrosnja(vreme);
 	}
 
 	public void print() {
 		System.out.println(this.marka + " - " + this.garancija);
+		System.out.println();
 		System.out.println("Ringle:");
+		System.out.println();
 		System.out.println("Gore levo:");
 		this.goreLevo.print();
+		System.out.println();
 		System.out.println("Gore desno:");
 		this.goreDesno.print();
+		System.out.println();
 		System.out.println("Dole levo:");
 		this.doleLevo.print();
+		System.out.println();
 		System.out.println("Dole desno:");
 		this.doleDesno.print();
+		System.out.println();
 	}
 
 }

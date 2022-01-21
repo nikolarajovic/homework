@@ -9,9 +9,18 @@ public class Zadatak3 {
 		Ringla doleDesno = new Ringla("Obican", 1);
 		ElektricniSporet eSporet = new ElektricniSporet("Bosh", 3, 4, doleLevo, 
 														doleDesno, goreLevo, goreDesno);
-
+		
 		eSporet.print();
-
+		
+		eSporet.pojacaj(1);
+		eSporet.pojacaj(2);
+		eSporet.pojacaj(2);
+		eSporet.pojacaj(4);
+		
+		System.out.println();
+		eSporet.print();
+		System.out.println("Potrosnja je: " + eSporet.potrosnja(5) + " kW.");
+		
 	}
 
 }
