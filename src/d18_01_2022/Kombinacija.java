@@ -8,21 +8,30 @@ public class Kombinacija {
 	private int jedan;
 	private int dva;
 	private int tri;
-	private int cetri;
+	private int cetiri;
 	private int pet;
 	private int sest;
 	private int sedam;
-	private ArrayList<Integer> kombinacija = new ArrayList<Integer>();
-	
-	public Kombinacija(String id, int jedan, int dva, int tri, int cetri, int pet, int sest, int sedam) {
+	private ArrayList<Integer> nizBrojeva = new ArrayList<Integer>();
+
+	public Kombinacija(String id, int jedan, int dva, int tri, int cetiri, int pet, int sest, int sedam) {
 		this.id = id;
-		kombinacija.add(jedan);
-		kombinacija.add(dva);
-		kombinacija.add(tri);
-		kombinacija.add(cetri);
-		kombinacija.add(pet);
-		kombinacija.add(sest);
-		kombinacija.add(sedam);
+
+		this.jedan = jedan;
+		this.dva = dva;
+		this.tri = tri;
+		this.cetiri = cetiri;
+		this.pet = pet;
+		this.sest = sest;
+		this.sedam = sedam;
+
+		nizBrojeva.add(jedan);
+		nizBrojeva.add(dva);
+		nizBrojeva.add(tri);
+		nizBrojeva.add(cetiri);
+		nizBrojeva.add(pet);
+		nizBrojeva.add(sest);
+		nizBrojeva.add(sedam);
 	}
 
 	public String getId() {
@@ -41,8 +50,8 @@ public class Kombinacija {
 		return tri;
 	}
 
-	public int getCetri() {
-		return cetri;
+	public int getCetiri() {
+		return cetiri;
 	}
 
 	public int getPet() {
@@ -57,11 +66,26 @@ public class Kombinacija {
 		return sedam;
 	}
 
-	public ArrayList<Integer> getKombinacija() {
-		return kombinacija;
+	public ArrayList<Integer> getNizBrojeva() {
+		return nizBrojeva;
 	}
-	
 
-	
+	public boolean daLiJeIstaKombinacija(Kombinacija kombinacija) {
+		for (int i = 0; i < this.nizBrojeva.size(); i++) {
+			if (this.nizBrojeva.get(i) == kombinacija.getNizBrojeva().get(i)) {
+				return true;
+			}
+		}
+		return false;
+	}
+
+	public void print() {
+		System.out.println("ID: " + this.id);
+		System.out.print("Brojevi: ");
+		for (int i = 0; i < this.nizBrojeva.size(); i++) {
+			System.out.print(this.nizBrojeva.get(i) + ", ");
+		}
+		System.out.println();
+	}
 
 }
