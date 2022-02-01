@@ -23,7 +23,7 @@ public class Zadatak2 {
 
 		Scanner s = new Scanner(System.in);
 
-		for (int i = 0; i < 5; i++) {
+		for (int i = 1; i <= 5; i++) {
 			driver.findElement(By.xpath("//*[contains(@class, 'btn btn-info add-new')]")).click();
 
 			System.out.println("Enter name: ");
@@ -38,7 +38,7 @@ public class Zadatak2 {
 			driver.findElement(By.id("name")).sendKeys(name + " " + lastName);
 			driver.findElement(By.id("department")).sendKeys(department);
 			driver.findElement(By.id("phone")).sendKeys(phone);
-			driver.findElement(By.xpath("//*[contains(@class, 'table table-bordered')]/tbody/tr[4]/td[4]/a[1]"))
+			driver.findElement(By.xpath("//*[contains(@class, 'table table-bordered')]/tbody//tr[last()]/td[4]/a[1]"))
 					.click();
 		}
 
