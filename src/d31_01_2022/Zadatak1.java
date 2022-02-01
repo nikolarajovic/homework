@@ -28,6 +28,13 @@ public class Zadatak1 {
 //		for (int i = 0; i < elementi.size(); i++) {
 //			driver.findElement(By.xpath("//*[contains(@class, 'col-md-12')]//div[1]//button")).click();
 //			Thread.sleep(1000);
+//		List<WebElement> brisanjaElemenata = driver
+//				.findElements(By.xpath("//*[contains(@class, 'col-md-12')]//button"));
+//		if (brisanjaElemenata.size() == elementi.size() - i) {
+//			System.out.println("Obrisan je element.");
+//		} else {
+//			System.out.println("Nije obrisan element.");
+//		}
 //		}
 
 //		Brisanje elemenata odozdo
