@@ -27,7 +27,7 @@ public class Zadatak1 {
 	}
 
 	@Test
-	public void ratingCheck() {
+	public void sortByRating() {
 		driver.manage().window().maximize();
 
 		driver.navigate().to("https://www.udemy.com/");
