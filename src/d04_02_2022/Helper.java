@@ -25,4 +25,9 @@ public class Helper {
 		js.executeScript("arguments[0].click()", driver.findElement(locator));
 	}
 
+	public void scrollToElement(By locator) {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].scrollIntoView(true)", locator);
+	}
+
 }

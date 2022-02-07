@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="d04_02_2022.Zadatak1">
+      <class name="d04_02_2022.Zadatak3">
         <methods>
-          <include name="before"/>
-          <include name="ratingCheck"/>
-          <include name="after"/>
+          <include name="testSortByAge"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
         </methods>
-      </class> <!-- d04_02_2022.Zadatak1 -->
+      </class> <!-- d04_02_2022.Zadatak3 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

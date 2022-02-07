@@ -2,54 +2,20 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="26897" started-at="2022-02-05T14:28:27 CET" finished-at="2022-02-05T14:28:53 CET">
+  <suite name="Default suite" duration-ms="6527" started-at="2022-02-07T12:10:59 CET" finished-at="2022-02-07T12:11:05 CET">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="26897" started-at="2022-02-05T14:28:27 CET" finished-at="2022-02-05T14:28:53 CET">
-      <class name="d04_02_2022.Zadatak1">
-        <test-method status="PASS" signature="before()[pri:0, instance:d04_02_2022.Zadatak1@63440df3]" name="before" is-config="true" duration-ms="2419" started-at="2022-02-05T14:28:27 CET" finished-at="2022-02-05T14:28:29 CET">
+    <test name="Default test" duration-ms="6527" started-at="2022-02-07T12:10:59 CET" finished-at="2022-02-07T12:11:05 CET">
+      <class name="d04_02_2022.Zadatak3">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:d04_02_2022.Zadatak3@63440df3]" name="beforeMethod" is-config="true" duration-ms="2460" started-at="2022-02-07T12:10:59 CET" finished-at="2022-02-07T12:11:01 CET">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- before -->
-        <test-method status="FAIL" signature="ratingCheck()[pri:0, instance:d04_02_2022.Zadatak1@63440df3]" name="ratingCheck" duration-ms="23762" started-at="2022-02-05T14:28:29 CET" finished-at="2022-02-05T14:28:53 CET">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#u194\-form\-group\-\-17"}
-  (Session info: chrome=98.0.4758.81)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.0', revision: '87802e897b'
-System info: host: 'RYAN', ip: '192.168.8.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_311'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [21908883f2e3af6be058d412964c065d, findElement {using=id, value=u194-form-group--17}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.81, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\Rajovic\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:49885}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49885/devtoo..., se:cdpVersion: 98.0.4758.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 21908883f2e3af6be058d412964c065d]]>
-            </message>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="testSortByAge()[pri:0, instance:d04_02_2022.Zadatak3@63440df3]" name="testSortByAge" duration-ms="3407" started-at="2022-02-07T12:11:01 CET" finished-at="2022-02-07T12:11:05 CET">
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#u194\-form\-group\-\-17"}
-  (Session info: chrome=98.0.4758.81)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.0', revision: '87802e897b'
-System info: host: 'RYAN', ip: '192.168.8.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_311'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [21908883f2e3af6be058d412964c065d, findElement {using=id, value=u194-form-group--17}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.81, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\Rajovic\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:49885}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49885/devtoo..., se:cdpVersion: 98.0.4758.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 21908883f2e3af6be058d412964c065d
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
-at d04_02_2022.Zadatak1.ratingCheck(Zadatak1.java:38)
+              <![CDATA[java.lang.NullPointerException
+at d04_02_2022.Zadatak3.testSortByAge(Zadatak3.java:39)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -80,15 +46,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ratingCheck -->
-        <test-method status="PASS" signature="after()[pri:0, instance:d04_02_2022.Zadatak1@63440df3]" name="after" is-config="true" duration-ms="671" started-at="2022-02-05T14:28:53 CET" finished-at="2022-02-05T14:28:53 CET">
+        </test-method> <!-- testSortByAge -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:d04_02_2022.Zadatak3@63440df3]" name="afterMethod" is-config="true" duration-ms="624" started-at="2022-02-07T12:11:05 CET" finished-at="2022-02-07T12:11:05 CET">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- after -->
-      </class> <!-- d04_02_2022.Zadatak1 -->
+        </test-method> <!-- afterMethod -->
+      </class> <!-- d04_02_2022.Zadatak3 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
