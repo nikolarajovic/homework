@@ -55,13 +55,9 @@ public class FromPage {
 
 	public boolean isDataSaved() {
 		boolean isDataSaved = false;
-		try {
-			String message = driver.findElement(By.className("poruka")).getAttribute("style");
-			if (message.equals("visibility: visible")) {
-				isDataSaved = true;
-			}
-		} catch (Exception e) {
-			isDataSaved = false;
+		String message = driver.findElement(By.className("poruka")).getAttribute("style");
+		if (message.equals("visibility: visible;")) {
+			isDataSaved = true;
 		}
 		return isDataSaved;
 	}

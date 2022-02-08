@@ -34,7 +34,7 @@ public class FormTest {
 	}
 
 	@Test
-	public void formTest() {
+	public void formTest() throws InterruptedException {
 		formPage.getFullNameInput().sendKeys("Nikola Rajovic");
 		formPage.getGenderRadioButton("male").click();
 		formPage.getDOBInput().sendKeys("21.08.1992.");
@@ -44,12 +44,12 @@ public class FormTest {
 		formPage.getCheckboxInput(2).click();
 		formPage.getCommentInput().sendKeys("Hello.");
 		formPage.getSubmitButton().click();
+		Thread.sleep(1000);
 		Assert.assertTrue(formPage.isDataSaved(), "Data is not saved.");
 	}
 
 	@AfterMethod
 	public void afterMethod() throws InterruptedException {
-		Thread.sleep(3000);
 		driver.quit();
 	}
 
