@@ -2,20 +2,26 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="6527" started-at="2022-02-07T12:10:59 CET" finished-at="2022-02-07T12:11:05 CET">
+  <suite name="Default suite" duration-ms="8231" started-at="2022-02-08T12:35:20 CET" finished-at="2022-02-08T12:35:28 CET">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="6527" started-at="2022-02-07T12:10:59 CET" finished-at="2022-02-07T12:11:05 CET">
-      <class name="d04_02_2022.Zadatak3">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:d04_02_2022.Zadatak3@63440df3]" name="beforeMethod" is-config="true" duration-ms="2460" started-at="2022-02-07T12:10:59 CET" finished-at="2022-02-07T12:11:01 CET">
+    <test name="Default test" duration-ms="8231" started-at="2022-02-08T12:35:20 CET" finished-at="2022-02-08T12:35:28 CET">
+      <class name="d07_02_2022_tests.FormTest">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:d07_02_2022_tests.FormTest@63440df3]" name="beforeMethod" is-config="true" duration-ms="3598" started-at="2022-02-08T12:35:20 CET" finished-at="2022-02-08T12:35:23 CET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="testSortByAge()[pri:0, instance:d04_02_2022.Zadatak3@63440df3]" name="testSortByAge" duration-ms="3407" started-at="2022-02-07T12:11:01 CET" finished-at="2022-02-07T12:11:05 CET">
-          <exception class="java.lang.NullPointerException">
+        <test-method status="FAIL" signature="formTest()[pri:0, instance:d07_02_2022_tests.FormTest@63440df3]" name="formTest" duration-ms="478" started-at="2022-02-08T12:35:23 CET" finished-at="2022-02-08T12:35:24 CET">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Data is not saved. expected [true] but found [false]]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at d04_02_2022.Zadatak3.testSortByAge(Zadatak3.java:39)
+              <![CDATA[java.lang.AssertionError: Data is not saved. expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at d07_02_2022_tests.FormTest.formTest(FormTest.java:47)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -46,15 +52,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSortByAge -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:d04_02_2022.Zadatak3@63440df3]" name="afterMethod" is-config="true" duration-ms="624" started-at="2022-02-07T12:11:05 CET" finished-at="2022-02-07T12:11:05 CET">
+        </test-method> <!-- formTest -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:d07_02_2022_tests.FormTest@63440df3]" name="afterMethod" is-config="true" duration-ms="4122" started-at="2022-02-08T12:35:24 CET" finished-at="2022-02-08T12:35:28 CET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- d04_02_2022.Zadatak3 -->
+      </class> <!-- d07_02_2022_tests.FormTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
