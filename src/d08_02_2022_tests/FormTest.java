@@ -65,13 +65,15 @@ public class FormTest {
 			String role = formatter.formatCellValue(sheet.getRow(i).getCell(4));
 //			Ne postoji tekstualni value npr read_books, moralo bi preko lokatora da se unese
 //			String wod = sheet.getRow(i).getCell(5).getStringCellValue();
+			int wod = 1;
 			String comment = formatter.formatCellValue(sheet.getRow(i).getCell(6));
 
-			formPage.dataInput(fullName, gender, dot, email, role, comment);
+			formPage.dataInput(fullName, gender, dot, email, role, wod, comment);
 			formPage.getSubmitButton().click();
 			
 			Thread.sleep(1000);
 			Assert.assertTrue(formPage.isDataSaved(), "Data is not saved.");
+			driver.navigate().refresh();
 		}
 
 	}

@@ -53,12 +53,13 @@ public class FormPage {
 		return driver.findElement(By.id("submit"));
 	}
 
-	public void dataInput(String fullName, String gender, String dot, String email, String role, String comment) {
+	public void dataInput(String fullName, String gender, String dot, String email, String role, int wod, String comment) {
 		this.getFullNameInput().sendKeys(fullName);
 		this.getGenderRadioButton(gender).click();
 		this.getDOBInput().sendKeys(dot);
 		this.getEmailInput().sendKeys(email);
 		this.roleSelect(role);
+		this.getCheckboxInput(1).click();
 		this.getCommentInput().sendKeys(comment);
 	}
 
