@@ -1,5 +1,7 @@
 package d07_02_2022_pages;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -18,32 +20,18 @@ public class CartPage {
 	}
 
 	public boolean isProductInTheCart() {
-		boolean isProductInTheCart;
-		String value = driver.findElement(By.id("quantity_6203c14ada11f")).getAttribute("value");
-		if (value.equals("2")) {
-			return isProductInTheCart = true;
-		}
-		return isProductInTheCart = false;
+		String value = driver.findElement(By.className("input-text")).getAttribute("value");
+		return value.equals("2");
 	}
-	
+
 	public WebElement getRemoveButton() {
 		return driver.findElement(By.className("remove"));
 	}
-	
+
 	public boolean isCartEmpty() {
-//		boolean isTextFound;
-//		if (driver.getPageSource().contains("added to your cart")) {
-//			return isTextFound = true;
-//		}
-//		return isTextFound = false;
-		boolean isCartEmpty = false;
-		try {
-			driver.findElement(By.xpath("//*[contains(text(),'Your cart is currently empty.')]"));
-			isCartEmpty = true;
-		} catch (Exception e) {
-			isCartEmpty = false;
-		}
-		return isCartEmpty;
+		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		return driver.findElement(By.xpath("//*[contains(@class, 'cart-empty woocommerce-info')]")).getText()
+				.contains("Your cart is currently empty.");
 	}
 
 }

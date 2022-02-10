@@ -12,7 +12,9 @@ import org.testng.annotations.BeforeMethod;
 
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -47,10 +49,17 @@ public class ShopTest {
 	public void formTest() throws InterruptedException {
 		mainPage.getShopButton().click();
 		mainPage.getFirstProductButton().click();
+		
+		Thread.sleep(2000);
 		productPage.getQuantityUpButton().click();
+		productPage.getAddToCartButton().click();
 		Assert.assertTrue(productPage.isTextFound(), "No message shown.");
 		productPage.getViewCartButton().click();
+		
+		Thread.sleep(2000);
 		Assert.assertTrue(cartPage.isProductInTheCart(), "Cart empty.");
+		
+		Thread.sleep(2000);
 		cartPage.getRemoveButton().click();
 		Assert.assertTrue(cartPage.isCartEmpty(), "Cart is not empty.");
 	}

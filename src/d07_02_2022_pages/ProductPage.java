@@ -1,5 +1,7 @@
 package d07_02_2022_pages;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -29,20 +31,13 @@ public class ProductPage {
 	}
 
 	public WebElement getAddToCartButton() {
-		return driver.findElement(By.xpath("//*[contains(@class, 'quantity-button quantity-up')]"));
+		return driver.findElement(By.name("add-to-cart"));
 	}
 
 	public boolean isTextFound() {
-		boolean isTextFound = false;
-		wait.until(
-				ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[contains(@class,'woocommerce-message')]")));
-		try {
-			driver.findElement(By.xpath("//*[contains(@class,'woocommerce-message')]"));
-			isTextFound = true;
-		} catch (Exception e) {
-			isTextFound = false;
-		}
-		return isTextFound;
+		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.className("woocommerce-message"))));
+		return driver.findElement(By.className("woocommerce-message")).getText().contains("have been added to your cart");
 	}
 
 	public WebElement getViewCartButton() {
