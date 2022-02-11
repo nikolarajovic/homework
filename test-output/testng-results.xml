@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="18435" started-at="2022-02-10T12:10:46 CET" finished-at="2022-02-10T12:11:04 CET">
+  <suite name="Default suite" duration-ms="4953" started-at="2022-02-11T12:46:08 CET" finished-at="2022-02-11T12:46:13 CET">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="18435" started-at="2022-02-10T12:10:46 CET" finished-at="2022-02-10T12:11:04 CET">
-      <class name="d08_02_2022_tests.FormTest">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:d08_02_2022_tests.FormTest@7a30d1e6]" name="beforeMethod" is-config="true" duration-ms="4489" started-at="2022-02-10T12:10:46 CET" finished-at="2022-02-10T12:10:50 CET">
+    <test name="Default test" duration-ms="4953" started-at="2022-02-11T12:46:08 CET" finished-at="2022-02-11T12:46:13 CET">
+      <class name="d10_02_2022_tests.ScreenshotTest">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:d10_02_2022_tests.ScreenshotTest@569cfc36]" name="beforeMethod" is-config="true" duration-ms="4035" started-at="2022-02-11T12:46:08 CET" finished-at="2022-02-11T12:46:12 CET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="formTest()[pri:0, instance:d08_02_2022_tests.FormTest@7a30d1e6]" name="formTest" duration-ms="13125" started-at="2022-02-10T12:10:50 CET" finished-at="2022-02-10T12:11:03 CET">
+        <test-method status="PASS" signature="formTest()[pri:0, instance:d10_02_2022_tests.ScreenshotTest@569cfc36]" name="formTest" duration-ms="244" started-at="2022-02-11T12:46:12 CET" finished-at="2022-02-11T12:46:13 CET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- formTest -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:d08_02_2022_tests.FormTest@7a30d1e6]" name="afterMethod" is-config="true" duration-ms="722" started-at="2022-02-10T12:11:03 CET" finished-at="2022-02-10T12:11:04 CET">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:d10_02_2022_tests.ScreenshotTest@569cfc36]" name="afterMethod" is-config="true" duration-ms="632" started-at="2022-02-11T12:46:13 CET" finished-at="2022-02-11T12:46:13 CET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- d08_02_2022_tests.FormTest -->
+      </class> <!-- d10_02_2022_tests.ScreenshotTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
